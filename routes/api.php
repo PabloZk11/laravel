@@ -11,7 +11,7 @@ use App\Http\Controllers\api\pedidoController;
 use App\Http\Controllers\api\usuarioController;
 use App\Http\Controllers\API\categoriaController;
 use App\Http\Controllers\API\proveedorController;
-use App\Http\Controllers\API\entradaController;
+use App\Http\Controllers\api\entradaController;
 use App\Http\Controllers\API\facturaEntradaController;
 use App\Http\Controllers\API\pqrsController;
 use App\Http\Controllers\AuthController;

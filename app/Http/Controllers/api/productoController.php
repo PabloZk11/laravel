@@ -8,7 +8,7 @@ use Illuminate\Validation\ValidationException;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\producto;
-use App\Http\Requests\guardarrproductoRequest;
+use App\Http\Requests\GuardarrproductoRequest;
 use App\Http\Requests\updProductosRequest;
 use App\Http\Responses\apiResponses;
 use Illuminate\Support\Facades\Log;

@@ -146,7 +146,7 @@ class usuarioController extends Controller
             $usuario = usuario::create([
                 'nombre' => $request-> nombre,
                 'email' => $request-> email,
-                'contraseña' => Hash::make($request->contraseña), 
+                'contrasena' => Hash::make($request->contraseña), 
                 "id_rol" => $request-> id_rol,
                 'id_documento' => $request-> id_documento,
             ]);

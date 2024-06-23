@@ -24,7 +24,7 @@ class updUsuario extends FormRequest
         return [
             "nombre" => "required",
             "email" => "required",
-            "contraseña" => "required",
+            "contrasena" => "required",
             "id_rol" => "required",
             "id_tdoc_usuario" => "required",
         ];

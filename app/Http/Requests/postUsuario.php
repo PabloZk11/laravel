@@ -24,7 +24,7 @@ class postUsuario extends FormRequest
         return [
             "nombre" => "required",
             "email" => "required",
-            "contraseña" => "required",
+            "contrasena" => "required",
             "id_rol" => "required",
             "id_documento" => "required",
         ];

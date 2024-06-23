@@ -14,7 +14,7 @@ class AuthController extends Controller
     {
         $credentials = $request->validate([
             'email' => 'required',
-            'contraseña' => 'required',
+            'contrasena' => 'required',
         ]);
 
         $user = usuario::where('email', $credentials['email'])->first();
@@ -23,7 +23,7 @@ class AuthController extends Controller
             return response()->json(['error' => 'Credenciales de inicio de sesión incorrectas'], 401);
         }
 
-        if (Hash::check($credentials['contraseña'], $user->contraseña)) {
+        if (Hash::check($credentials['contrasena'], $user->contrasena)) {
             $role = $user->id_rol == 1 ? 'admin' : 'vendedor';
             return response()->json(['role' => $role]);
         } else {
